@@ -2,10 +2,26 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Waves, Wifi, UtensilsCrossed, Dumbbell, Wine, Sparkles } from "lucide-react";
+import { useEffect, useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const Home = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  const heroImages = [
+    "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1600&q=80",
+    "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600&q=80",
+    "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1600&q=80",
+    "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=1600&q=80",
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
   const featuredRooms = [
     {
       id: 1,
@@ -43,17 +59,21 @@ const Home = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
 
-      {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center text-white">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1600&q=80')",
-          }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-b from-ocean-deep/40 via-ocean-medium/50 to-ocean-light/30"></div>
-        </div>
+      {/* Hero Section with Slideshow */}
+      <section className="relative h-screen flex items-center justify-center text-white overflow-hidden">
+        {heroImages.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
+              index === currentSlide ? "opacity-100" : "opacity-0"
+            }`}
+            style={{
+              backgroundImage: `url('${image}')`,
+            }}
+          >
+            <div className="absolute inset-0 bg-gradient-to-b from-ocean-deep/40 via-ocean-medium/50 to-ocean-light/30"></div>
+          </div>
+        ))}
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-6 animate-fade-in">
             Welcome to Atlantic Blu
@@ -69,6 +89,22 @@ const Home = () => {
               <Link to="/booking">Book Now</Link>
             </Button>
           </div>
+        </div>
+        
+        {/* Slide Indicators */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-2 z-20">
+          {heroImages.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                index === currentSlide 
+                  ? "bg-white w-8" 
+                  : "bg-white/50 hover:bg-white/75"
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
         </div>
       </section>
 
