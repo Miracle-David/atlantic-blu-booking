@@ -15,7 +15,7 @@ const Gallery = () => {
     {
       url: "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200&q=80",
       category: "Rooms",
-      alt: "Ocean view suite",
+      alt: "Signature suite",
     },
     {
       url: "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=1200&q=80",

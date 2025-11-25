@@ -124,7 +124,7 @@ const Contact = () => {
                       <div>
                         <h4 className="font-inter font-semibold mb-1">Address</h4>
                         <p className="font-inter text-sm text-muted-foreground">
-                          123 Ocean Drive
+                          123 Luxury Boulevard
                           <br />
                           Coastal City, CA 90210
                         </p>

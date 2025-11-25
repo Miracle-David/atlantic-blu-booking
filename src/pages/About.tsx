@@ -51,7 +51,7 @@ const About = () => {
                   Founded in 1995, Atlantic Blu Hotels began as a dream to create a sanctuary where
                   guests could experience the perfect blend of luxury and coastal tranquility. What
                   started as a small boutique property has grown into a beloved destination for
-                  travelers seeking an exceptional oceanfront experience.
+                  travelers seeking an exceptional luxury experience.
                 </p>
                 <p>
                   Our founders, inspired by the natural beauty of the Atlantic coastline, envisioned

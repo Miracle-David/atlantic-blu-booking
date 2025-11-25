@@ -9,13 +9,13 @@ const Rooms = () => {
   const rooms = [
     {
       id: 1,
-      name: "Ocean View Suite",
+      name: "Signature Suite",
       price: 299,
       image: "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=80",
-      description: "Spacious suite with panoramic ocean views and private balcony",
+      description: "Spacious suite with elegant interiors and private balcony",
       guests: 4,
       size: "650 sq ft",
-      amenities: ["Ocean View", "King Bed", "Private Balcony", "Mini Bar"],
+      amenities: ["Premium View", "King Bed", "Private Balcony", "Mini Bar"],
     },
     {
       id: 2,
@@ -65,7 +65,7 @@ const Rooms = () => {
       description: "Cozy and affordable room with all essential amenities",
       guests: 2,
       size: "350 sq ft",
-      amenities: ["Partial Ocean View", "Queen Bed", "Smart TV", "Work Area"],
+      amenities: ["Scenic View", "Queen Bed", "Smart TV", "Work Area"],
     },
   ];
 

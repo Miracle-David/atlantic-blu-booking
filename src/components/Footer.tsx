@@ -47,7 +47,7 @@ const Footer = () => {
             <ul className="space-y-3 font-inter text-sm">
               <li className="flex items-start gap-2 text-white/80">
                 <MapPin size={18} className="mt-0.5 flex-shrink-0" />
-                <span>123 Ocean Drive, Coastal City, CA 90210</span>
+                <span>123 Luxury Boulevard, Coastal City, CA 90210</span>
               </li>
               <li className="flex items-center gap-2 text-white/80">
                 <Phone size={18} className="flex-shrink-0" />

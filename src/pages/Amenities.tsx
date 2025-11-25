@@ -35,7 +35,7 @@ const Amenities = () => {
       items: [
         {
           icon: UtensilsCrossed,
-          name: "Ocean View Restaurant",
+          name: "Signature Restaurant",
           description: "Fine dining with coastal cuisine",
         },
         { icon: Wine, name: "Rooftop Bar", description: "Signature cocktails and sunset views" },
@@ -57,7 +57,7 @@ const Amenities = () => {
         {
           icon: Waves,
           name: "Infinity Pool & Spa",
-          description: "Heated pool with ocean views",
+          description: "Heated pool with stunning views",
         },
         {
           icon: Dumbbell,
@@ -115,7 +115,7 @@ const Amenities = () => {
             <div>
               <h2 className="text-4xl font-playfair font-bold mb-6">Infinity Pool & Spa</h2>
               <p className="font-inter text-muted-foreground leading-relaxed mb-6">
-                Immerse yourself in our stunning infinity pool that seems to merge with the ocean
+                Immerse yourself in our stunning infinity pool surrounded by elegant landscapes
                 horizon. Our heated pool is complemented by a full-service spa offering massage
                 therapy, facials, and body treatments. Relax in the hot tub while watching the
                 sunset, or lounge on our comfortable deck chairs with complimentary poolside

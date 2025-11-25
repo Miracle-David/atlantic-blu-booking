@@ -25,10 +25,10 @@ const Home = () => {
   const featuredRooms = [
     {
       id: 1,
-      name: "Ocean View Suite",
+      name: "Signature Suite",
       price: 299,
       image: "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=80",
-      description: "Spacious suite with panoramic ocean views",
+      description: "Spacious suite with elegant comfort and luxury",
     },
     {
       id: 2,
@@ -79,7 +79,7 @@ const Home = () => {
             Welcome to Atlantic Blu
           </h1>
           <p className="text-xl md:text-2xl font-inter mb-8 text-white/90 animate-fade-in">
-            Where Luxury Meets the Ocean
+            Where Luxury Meets Comfort
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
             <Button size="lg" asChild className="text-lg">
@@ -159,7 +159,7 @@ const Home = () => {
                 Aaron's Restro & Bar
               </h2>
               <p className="text-lg font-inter text-muted-foreground mb-6">
-                Indulge in an exquisite fine dining experience at Aaron's Restro & Bar. Our Michelin-trained chefs create culinary masterpieces using the finest ingredients, paired with breathtaking ocean views.
+                Indulge in an exquisite fine dining experience at Aaron's Restro & Bar. Our Michelin-trained chefs create culinary masterpieces using the finest ingredients, paired with breathtaking views and elegant ambiance.
               </p>
               <p className="text-lg font-inter text-muted-foreground mb-8">
                 From fresh seafood to premium cuts, every dish is crafted to perfection. Complement your meal with selections from our extensive wine cellar.

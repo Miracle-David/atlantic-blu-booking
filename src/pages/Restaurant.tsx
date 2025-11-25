@@ -56,7 +56,7 @@ const Restaurant = () => {
             Aaron's Restro & Bar
           </h1>
           <p className="text-xl md:text-2xl font-inter mb-8 text-white/90 animate-fade-in">
-            Fine Dining with Ocean Views
+            Fine Dining with Elegant Ambiance
           </p>
           <Button size="lg" variant="secondary" asChild className="text-lg animate-fade-in">
             <a href="#reservations">Make a Reservation</a>
