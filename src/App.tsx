@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Rooms from "./pages/Rooms";
 import RoomDetail from "./pages/RoomDetail";
 import Booking from "./pages/Booking";
+import Restaurant from "./pages/Restaurant";
 import About from "./pages/About";
 import Amenities from "./pages/Amenities";
 import Gallery from "./pages/Gallery";
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/rooms" element={<Rooms />} />
           <Route path="/rooms/:id" element={<RoomDetail />} />
           <Route path="/booking" element={<Booking />} />
+          <Route path="/restaurant" element={<Restaurant />} />
           <Route path="/about" element={<About />} />
           <Route path="/amenities" element={<Amenities />} />
           <Route path="/gallery" element={<Gallery />} />
