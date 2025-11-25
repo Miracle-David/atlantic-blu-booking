@@ -52,7 +52,7 @@ const Home = () => {
               "url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1600&q=80')",
           }}
         >
-          <div className="absolute inset-0 bg-ocean-deep/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-ocean-deep/40 via-ocean-deep/40 to-background"></div>
         </div>
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-6 animate-fade-in">
@@ -177,7 +177,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary text-white">
+      <section className="py-20 bg-ocean-deep text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold mb-6">
             Ready for Your Perfect Getaway?
