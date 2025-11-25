@@ -17,7 +17,7 @@ import Header from "@/components/Header";
 const Admin = () => {
   // Mock data - will be replaced with real data from backend
   const rooms = [
-    { id: 1, name: "Ocean View Suite", price: 299, status: "Available", bookings: 12 },
+    { id: 1, name: "Signature Suite", price: 299, status: "Available", bookings: 12 },
     { id: 2, name: "Deluxe King Room", price: 199, status: "Available", bookings: 8 },
     { id: 3, name: "Beachfront Villa", price: 499, status: "Occupied", bookings: 6 },
   ];
@@ -26,7 +26,7 @@ const Admin = () => {
     {
       id: 1,
       guest: "John Doe",
-      room: "Ocean View Suite",
+      room: "Signature Suite",
       checkIn: "2024-03-15",
       checkOut: "2024-03-20",
       status: "Confirmed",

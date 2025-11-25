@@ -10,10 +10,9 @@ const RoomDetail = () => {
   const { id } = useParams();
   const [selectedImage, setSelectedImage] = useState(0);
 
-  // Mock room data - in real app, fetch based on id
   const room = {
     id: 1,
-    name: "Ocean View Suite",
+    name: "Signature Suite",
     price: 299,
     images: [
       "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200&q=80",
@@ -22,12 +21,12 @@ const RoomDetail = () => {
       "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=1200&q=80",
     ],
     description:
-      "Immerse yourself in luxury with our Ocean View Suite, featuring floor-to-ceiling windows that frame breathtaking panoramic views of the Atlantic Ocean. This spacious 650 sq ft suite is designed with coastal elegance in mind, featuring a king-size bed with premium linens, a separate sitting area, and a private balcony where you can watch the sunrise over the water.",
+      "Immerse yourself in luxury with our Signature Suite, featuring floor-to-ceiling windows that frame breathtaking panoramic views. This spacious 650 sq ft suite is designed with coastal elegance in mind, featuring a king-size bed with premium linens, a separate sitting area, and a private balcony where you can relax in comfort.",
     guests: 4,
     size: "650 sq ft",
     bedType: "1 King Bed + Sofa Bed",
     features: [
-      "Private balcony with ocean views",
+      "Private balcony with stunning views",
       "King-size bed with premium linens",
       "Separate living area with sofa bed",
       "Marble bathroom with rain shower",

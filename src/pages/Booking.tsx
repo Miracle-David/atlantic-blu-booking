@@ -17,7 +17,7 @@ const Booking = () => {
   const [children, setChildren] = useState(0);
 
   const selectedRoom = {
-    name: "Ocean View Suite",
+    name: "Signature Suite",
     price: 299,
     image: "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=80",
   };
