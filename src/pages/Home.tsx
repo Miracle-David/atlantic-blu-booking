@@ -114,6 +114,35 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Restaurant Section */}
+      <section className="py-20 bg-accent/10">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <h2 className="text-4xl md:text-5xl font-playfair font-bold text-foreground mb-6">
+                Aaron's Restro & Bar
+              </h2>
+              <p className="text-lg font-inter text-muted-foreground mb-6">
+                Indulge in an exquisite fine dining experience at Aaron's Restro & Bar. Our Michelin-trained chefs create culinary masterpieces using the finest ingredients, paired with breathtaking ocean views.
+              </p>
+              <p className="text-lg font-inter text-muted-foreground mb-8">
+                From fresh seafood to premium cuts, every dish is crafted to perfection. Complement your meal with selections from our extensive wine cellar.
+              </p>
+              <Button size="lg" asChild>
+                <Link to="/restaurant">Explore Restaurant</Link>
+              </Button>
+            </div>
+            <div className="order-1 lg:order-2">
+              <img
+                src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80"
+                alt="Aaron's Restro & Bar"
+                className="rounded-lg shadow-2xl w-full h-[400px] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Amenities */}
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-4">
